@@ -183,8 +183,79 @@ export default function Home() {
     <section id="about" className="section shell"><div className="sectionHead"><span className="kicker">01 / ABOUT</span><h2>Cloud thinking.<br /><span>Business impact.</span></h2></div><div className="aboutGrid"><p className="bodyBig">I am an AWS-focused cloud professional specializing in cloud architecture, infrastructure design, deployment automation and cost optimization. I am passionate about building secure, scalable and reliable cloud solutions that address real business needs.
       My interests include AWS infrastructure migration, CI/CD pipelines, containerization, cloud security and operational efficiency. Through practical projects, I aim to demonstrate sound architectural decisions, automation, and cost-conscious infrastructure design.</p><div><p>My portfolio explores infrastructure architecture, deployment automation, migration planning and cost-conscious design. I aim to document not just what a solution uses, but why each architectural decision makes sense.</p><p>Explore the projects below as they move from reference designs into tested, documented implementations.</p><a className="textlink" href="#contact">Get in touch <ArrowUpRight size={16} /></a></div></div></section>
     <section id="skills" className="section alternate"><div className="shell"><div className="sectionHead"><span className="kicker">02 / EXPERTISE</span><h2>Tools of the <span>trade.</span></h2><p>Technologies and focus areas shaping my cloud engineering work.</p></div><div className="skillsGrid">{skills.map((s, i) => <article className="skill" key={s.heading}><div className="skillTop"><span>0{i + 1}</span><Cloud size={23} /></div><h3>{s.heading}</h3><ul>{s.items.map(item => <li key={item}><span className="bullet" />{item}</li>)}</ul></article>)}</div></div></section>
-    <section id="projects" className="section shell"><div className="sectionHead"><span className="kicker">03 / SELECTED WORK</span><h2>Architecture in <span>action.</span></h2><p>Explore the documented AWS deployment, architecture diagram and roadmap for upcoming cloud engineering projects.</p></div><div className="projects">{projects.map(p => { const Icon = p.icon; return <article className="project" key={p.number}><div className="projectVisual"><div className="visualHeader"><span>{p.type}</span><span>{p.number} / 05</span></div><div className="projectIcon"><Icon size={52} strokeWidth={1.2} /></div><div className="visualFooter">AWS / SOLUTION DESIGN <span>↗</span></div></div><div className="projectContent"><div className="projectMeta"><span>{p.type}</span><span className="status">{p.status}</span></div><h3>{p.name}</h3><p>{p.description}</p><div className="tags">{p.stack.map(t => <span key={t}>{t}</span>)}</div><div className="projectLinks">{p.repo ? <a href={p.repo} target="_blank" rel="noopener noreferrer">View GitHub repository <ArrowUpRight size={16} /></a> : <span>Repository coming soon</span>}{p.diagram && <a href={p.diagram} target="_blank" rel="noopener noreferrer">Architecture diagram <ArrowUpRight size={16} /></a>}</div></div></article> })}</div></section>
-    <section id="certifications" className="section alternate"><div className="shell certGrid"><div className="sectionHead"><span className="kicker">04 / CREDENTIALS</span><h2>Always <span>learning.</span></h2><p>Verified AWS credentials and learning milestones will appear here when added.</p></div><div className="cert"><ShieldCheck size={33} /><div><h3>Certifications & credentials</h3><p>Add your actual certification name, issue date and public verification URL here. No unverified credentials are displayed.</p></div></div></div></section>
+    <section id="projects" className="section shell"><div className="sectionHead"><span className="kicker">03 / SELECTED WORK</span><h2>Architecture in <span>action.</span></h2><p>Explore the documented AWS deployment, architecture diagram and roadmap for different cloud engineering projects.</p></div><div className="projects">{projects.map(p => { const Icon = p.icon; return <article className="project" key={p.number}><div className="projectVisual"><div className="visualHeader"><span>{p.type}</span><span>{p.number} / 05</span></div><div className="projectIcon"><Icon size={52} strokeWidth={1.2} /></div><div className="visualFooter">AWS / SOLUTION DESIGN <span>↗</span></div></div><div className="projectContent"><div className="projectMeta"><span>{p.type}</span><span className="status">{p.status}</span></div><h3>{p.name}</h3><p>{p.description}</p><div className="tags">{p.stack.map(t => <span key={t}>{t}</span>)}</div><div className="projectLinks">{p.repo ? <a href={p.repo} target="_blank" rel="noopener noreferrer">View GitHub repository <ArrowUpRight size={16} /></a> : <span>Repository coming soon</span>}{p.diagram && <a href={p.diagram} target="_blank" rel="noopener noreferrer">Architecture diagram <ArrowUpRight size={16} /></a>}</div></div></article> })}</div></section>
+
+    <section id="certifications" className="section alternate">
+      <div className="shell">
+        <div className="sectionHead">
+          <span className="kicker">04 / CREDENTIALS</span>
+          <h2>Certified to <span>architect.</span></h2>
+          <p>
+            AWS professional certifications demonstrating foundational cloud
+            knowledge and solutions architecture expertise.
+          </p>
+        </div>
+
+        <div className="skillsGrid">
+          <article className="skill">
+            <div className="skillTop">
+              <span>AWS / ASSOCIATE</span>
+              <ShieldCheck size={26} />
+            </div>
+
+            <h3>AWS Certified Solutions Architect – Associate</h3>
+
+            <p>Amazon Web Services Training and Certification</p>
+
+            <p>Issued: June 30, 2025</p>
+            <p>Expires: June 30, 2028</p>
+
+            <a
+              className="textlink"
+              href="https://www.credly.com/badges/e33418b2-b5f6-43c0-9955-b101d2041400/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Verify on Credly <ArrowUpRight size={16} />
+            </a>
+          </article>
+
+          <article className="skill">
+            <div className="skillTop">
+              <span>AWS / FOUNDATIONAL</span>
+              <ShieldCheck size={26} />
+            </div>
+
+            <h3>AWS Certified Cloud Practitioner</h3>
+
+            <p>Amazon Web Services Training and Certification</p>
+
+            <p>Issued: September 16, 2023</p>
+            <p>Expires: June 30, 2028</p>
+
+            <a
+              className="textlink"
+              href="https://www.credly.com/badges/8dd03523-b93e-4837-9be3-bccac6b0c3d2/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Verify on Credly <ArrowUpRight size={16} />
+            </a>
+          </article>
+        </div>
+
+        <div style={{ marginTop: '32px' }}>
+          <a
+            className="textlink"
+            href="https://www.credly.com/users/pelumi-oke.38928bbb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View all credentials on Credly <ArrowUpRight size={16} />
+          </a>
+        </div>
+      </div>
+    </section>
     <section id="contact" className="section shell contact"><span className="kicker">05 / CONTACT</span><h2>Have a cloud challenge?<br /><span>Let's connect.</span></h2><p>Open to cloud engineering opportunities, architecture conversations and technical collaboration.</p><div className="actions"><a className="primary" href={`mailto:${profile.email}`}>Send an email <ArrowUpRight size={17} /></a><a className="secondary" href={profile.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={17} /> Connect on LinkedIn</a></div></section>
     <footer><div className="shell footerInner"><a className="brand" href="#home">PO<span className="accent">.</span> / CLOUD</a><span>© {new Date().getFullYear()} {profile.name}. Built with Next.js.</span><a href="#home">Back to top ↑</a></div></footer></main >
 }
