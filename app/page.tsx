@@ -30,6 +30,7 @@ const projects = [
     icon: Layers3,
     repo: 'https://github.com/fhyxx/aws-three-tier-architecture',
     diagram: 'https://github.com/fhyxx/aws-three-tier-architecture/blob/main/docs/architecture-diagram.md',
+    workflow: '',
   },
   {
     number: '02',
@@ -48,6 +49,7 @@ const projects = [
     icon: GitBranch,
     repo: '',
     diagram: '',
+    workflow: '',
   },
   {
     number: '03',
@@ -66,6 +68,7 @@ const projects = [
     icon: Database,
     repo: '',
     diagram: '',
+    workflow: '',
   },
   {
     number: '04',
@@ -84,6 +87,7 @@ const projects = [
     icon: Activity,
     repo: '',
     diagram: '',
+    workflow: '',
   },
   {
     number: '05',
@@ -102,6 +106,7 @@ const projects = [
     icon: Boxes,
     repo: '',
     diagram: '',
+    workflow: '',
   },
 ];
 
