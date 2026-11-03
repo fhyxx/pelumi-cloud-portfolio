@@ -16,15 +16,18 @@ const projects = [
     number: '01',
     name: 'AWS Three-Tier Architecture Foundation',
     type: 'SOLUTIONS ARCHITECTURE',
-    status: 'Implemented · documented test deployment',
+    status: 'Implemented · Terraform validated; test deployment documented',
     description:
-      'Designed a six-subnet VPC across two Availability Zones and deployed an EC2-hosted HTTP test application with systemd and Session Manager. Validated public access and temporary ALB routing, investigated target health, and removed the ALB after testing to control costs. Private application deployment, Auto Scaling and RDS remain future work.',
+      'Designed a six-subnet VPC across two Availability Zones and deployed an EC2-hosted HTTP test application managed by systemd, with Session Manager for administration. Adopted the existing network, security groups and EC2 instance into modular Terraform, configured encrypted S3 remote state, and validated the refactored configuration with a 32-resource inventory and a zero-change plan. Tested temporary ALB routing and removed the ALB after validation. Private application-tier deployment, Auto Scaling and RDS remain future work.',
     stack: [
       'VPC',
       'EC2',
       'Application Load Balancer',
       'Systems Manager',
       'AWS Budgets',
+      'Terraform',
+      'Amazon S3 state',
+      'EBS encryption',
       'IAM',
     ],
     icon: Layers3,
@@ -36,9 +39,9 @@ const projects = [
     number: '02',
     name: 'Containerized AWS CI/CD Pipeline',
     type: 'DEVOPS & AUTOMATION',
-    status: 'Implemented · CI/CD verified',
+    status: 'Implemented · ECS/Fargate deployment verified; service scaled down',
     description:
-      'Built and verified a GitHub Actions pipeline for a Node.js/Express app. The workflow installs dependencies, runs three automated tests, builds a Docker image, and publishes latest and commit-SHA tags to GitHub Container Registry and private Amazon ECR. GitHub Actions authenticates to AWS using OIDC and a least-privilege IAM role, without long-lived AWS access keys. The project intentionally stops at image publishing; ECS/Fargate deployment is future work to keep costs controlled.',
+      'Built and verified a GitHub Actions pipeline for a Node.js/Express app. The workflow installs dependencies, runs three automated tests, builds a Docker image, publishes latest and commit-SHA tags to GitHub Container Registry and private Amazon ECR, then deploys the ECR image to Amazon ECS on AWS Fargate. GitHub Actions authenticates to AWS using OIDC and an IAM role, without long-lived AWS access keys. The Fargate service deployment was verified with a successful HTTP 200 response and then scaled down to zero tasks; the temporary public inbound rule for TCP 3000 was removed during cleanup.',
     stack: [
       'GitHub Actions',
       'Docker',
@@ -49,7 +52,7 @@ const projects = [
     icon: GitBranch,
     repo: 'https://github.com/fhyxx/pelumi-containerized-cicd',
     diagram: '',
-    workflow: 'https://github.com/fhyxx/pelumi-containerized-cicd/actions/runs/39781843020',
+    workflow: 'https://github.com/fhyxx/pelumi-containerized-cicd/actions/runs/41639511999',
   },
   {
     number: '03',

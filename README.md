@@ -56,7 +56,7 @@ The first featured project is the three-tier AWS architecture project:
 - Repository: [AWS Three-Tier Architecture](https://github.com/fhyxx/aws-three-tier-architecture)
 - Architecture diagram: [View the diagram](https://github.com/fhyxx/aws-three-tier-architecture/blob/main/docs/architecture-diagram.md)
 
-Future project deliverables may include architecture diagrams, threat models, network CIDRs, infrastructure-as-code, deployment evidence, estimated monthly costs, teardown instructions, and lessons learned.
+Upcoming project deliverables will add architecture diagrams, threat models, network CIDRs, infrastructure-as-code, deployment evidence, estimated monthly costs, teardown instructions, and lessons learned where relevant.
 
 ## Cost awareness
 
