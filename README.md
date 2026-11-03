@@ -11,8 +11,6 @@ The portfolio presents implemented AWS engineering work separately from the proj
 
 ### Project 01 — AWS Three-Tier Architecture Foundation
 
-<badge-placeholder/>
-
 **Status:** Implemented — Terraform refactor validated; EC2 test deployment documented.
 
 Designed a VPC with six subnets across two Availability Zones, separate route tables for public, application, and database tiers, security-group controls, and an EC2-hosted HTTP test application. Adopted the existing AWS resources into modular Terraform, configured encrypted S3 remote state with native S3 lockfile support, and migrated the EC2 root volume to encrypted gp3 storage.
