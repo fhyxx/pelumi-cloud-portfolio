@@ -8,7 +8,7 @@ const profile = {
   email: 'okepelumi5@gmail.com',
   github: 'https://github.com/fhyxx',
   linkedin: 'https://www.linkedin.com/in/oluwapelumioke',
-  resume: '/resume.pdf',
+  resume: '/Oke_Pelumi_Papayaw_CV_.pdf',
 };
 
 const projects = [
