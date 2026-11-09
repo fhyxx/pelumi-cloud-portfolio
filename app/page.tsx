@@ -83,7 +83,7 @@ const projects = [
     number: '04',
     name: 'AWS Cost Visibility & Optimization Dashboard',
     type: 'COST OPTIMIZATION & FINOPS',
-    status: 'Implemented · 27 tests passed · GitHub Actions CI passed',
+    status: 'Implemented · 28 tests passed · GitHub Actions CI passed',
     description:
       'Built a Python and Streamlit billing analytics dashboard that turns monthly AWS cost records into executive KPIs, spend trends, service/region/account breakdowns, explainable anomaly flags and evidence-led optimization reviews. Added validated CSV ingestion with common Cost and Usage Report header aliases, missing-month-aware comparisons, USD-only validation, duplicate-line-item handling, spreadsheet-safe exports and a downloadable analysis package. The repository includes an 18-month reproducible synthetic dataset, automated tests, Ruff and mypy checks, and GitHub Actions CI. All sample billing data is synthetic; the app currently runs locally and does not connect to AWS or provision resources. Savings scenarios are illustrative and require service-specific telemetry and operational review.',
     stack: [
@@ -100,7 +100,7 @@ const projects = [
     icon: Activity,
     repo: 'https://github.com/fhyxx/aws-cost-optimization-dashboard',
     diagram: '',
-    workflow: 'https://github.com/fhyxx/aws-cost-optimization-dashboard/actions/runs/42699113181',
+    workflow: 'https://github.com/fhyxx/aws-cost-optimization-dashboard/actions/runs/42700928201',
   },
   {
     number: '05',
