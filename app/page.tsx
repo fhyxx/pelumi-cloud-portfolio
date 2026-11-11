@@ -59,9 +59,9 @@ const projects = [
     number: '03',
     name: 'On-Premises to AWS Migration Blueprint',
     type: 'CLOUD MIGRATION',
-    status: 'Design signed off · live implementation coming soon',
+    status: 'Blueprint complete · Terraform validated · not deployed',
     description:
-      'Designed and technically signed off a fictional end-to-end AWS migration blueprint covering workload discovery, a two-AZ target architecture, segmented VPC networking, hybrid VPN/BGP connectivity, AWS MGN for server rehosting, DMS for PostgreSQL migration, and DataSync for file transfer. Built an opt-in Terraform foundation for network, workload and migration resources, a migration runbook, rollback and readiness controls, a reconciled cost model, and automated synthetic CI validation. The architecture and diagrams are documented and reviewed; no AWS resources or migration services have been deployed yet. A controlled live implementation and hands-on validation phase is planned next.',
+      'Designed and technically signed off a fictional end-to-end AWS migration blueprint covering workload discovery, a two-AZ target architecture, segmented VPC networking, hybrid VPN/BGP connectivity, AWS MGN for server rehosting, DMS for PostgreSQL migration, and DataSync for file transfer. Built an opt-in Terraform foundation for network, workload and migration resources, a migration runbook, rollback and readiness controls, a reconciled cost model, and automated synthetic CI validation. The architecture, diagrams, Terraform foundation, migration runbook and cost model are documented and validated; no AWS resources or migration services have been deployed. This project is a completed design-and-planning deliverable, not a live migration.',
     stack: [
       'AWS Application Migration Service (MGN)',
       'AWS Database Migration Service (DMS)',
@@ -83,9 +83,9 @@ const projects = [
     number: '04',
     name: 'AWS Cost Visibility & Optimization Dashboard',
     type: 'COST OPTIMIZATION & FINOPS',
-    status: 'Implemented · 28 tests passed · GitHub Actions CI passed',
+    status: 'Implemented · 28 tests passed · CI passed · hosted Streamlit app live',
     description:
-      'Built a Python and Streamlit billing analytics dashboard that turns monthly AWS cost records into executive KPIs, spend trends, service/region/account breakdowns, explainable anomaly flags and evidence-led optimization reviews. Added validated CSV ingestion with common Cost and Usage Report header aliases, missing-month-aware comparisons, USD-only validation, duplicate-line-item handling, spreadsheet-safe exports and a downloadable analysis package. The repository includes an 18-month reproducible synthetic dataset, automated tests, Ruff and mypy checks, and GitHub Actions CI. All sample billing data is synthetic; the app currently runs locally and does not connect to AWS or provision resources. Savings scenarios are illustrative and require service-specific telemetry and operational review.',
+      'Built a Python and Streamlit billing analytics dashboard that turns monthly AWS cost records into executive KPIs, spend trends, service/region/account breakdowns, explainable anomaly flags and evidence-led optimization reviews. Added validated CSV ingestion with common Cost and Usage Report header aliases, missing-month-aware comparisons, USD-only validation, duplicate-line-item handling, spreadsheet-safe exports and a downloadable analysis package. The repository includes an 18-month reproducible synthetic dataset, automated tests, Ruff and mypy checks, and GitHub Actions CI. All sample billing data is synthetic. A hosted Streamlit demonstration is available; the app does not connect to AWS or provision resources. Savings scenarios are illustrative and require service-specific telemetry and operational review.',
     stack: [
       'Python',
       'Streamlit',
